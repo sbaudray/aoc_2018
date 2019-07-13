@@ -13,4 +13,12 @@ defmodule Aoc2018.Day01Test do
 
     assert compute_frequency(IO.stream(device, :line)) == 2
   end
+
+  test "frequency met twice" do
+    assert frequency_met_twice([
+             "+1\n",
+             "+2\n",
+             "-1\n"
+           ]) == 3
+  end
 end
